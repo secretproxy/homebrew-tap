@@ -11,7 +11,7 @@ class Secretproxy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/secretproxy/secretproxy/releases/download/v0.1.0/secretproxy_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ee70e1410b1b58376543a0aaeac507721477ba38a2ca7d391a7de5c7c42eaa3e"
+      sha256 "8eedf28d6edec6ce3d0f270fb474f5540d642e4bde60942c340eb77abc9122ef"
 
       define_method(:install) do
         bin.install "secretproxy"
@@ -19,7 +19,7 @@ class Secretproxy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/secretproxy/secretproxy/releases/download/v0.1.0/secretproxy_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ad840a00a14475195d927bc51c9efc5f63b2617f6ff024d4bf398ee291ddef5e"
+      sha256 "362f851d336fd95cd13c49e539ee4da0c6360ad38a9c73c92a2ea2df6710e9c2"
 
       define_method(:install) do
         bin.install "secretproxy"
@@ -30,14 +30,14 @@ class Secretproxy < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/secretproxy/secretproxy/releases/download/v0.1.0/secretproxy_0.1.0_linux_amd64.tar.gz"
-      sha256 "d3c2d7f0c713b32989b476638cb918a74aa758017bf8921cfc2c56a4855e8526"
+      sha256 "cdba6dcf2fbc1bcc8aa3d541fb7b8683449fabc347de8c8261888ca4a19e11d7"
       define_method(:install) do
         bin.install "secretproxy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/secretproxy/secretproxy/releases/download/v0.1.0/secretproxy_0.1.0_linux_arm64.tar.gz"
-      sha256 "410abb02d1d8b0224ebf8d04a5641e3acec3ce42d7578032bfbeb5e849106be4"
+      sha256 "344d388a83dc3f556ea7a31b9e23b00bf826ad5f4068f856ab81277aee5c4684"
       define_method(:install) do
         bin.install "secretproxy"
       end
